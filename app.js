@@ -33,10 +33,10 @@ app.post("/", function(req, res) {
   var jsonData = JSON.stringify(data);
 
   var option = {
-    url: "https://us4.api.mailchimp.com/3.0/lists/8bdf902989",
+    url: "ID",
     method: "POST",
     headers: {
-      "Authorization": "eliftc1 5f58bd3fabf74db1e009372b67a99b60-us4"
+      "Authorization": "API KEY"
     },
     body: jsonData
   };
@@ -63,7 +63,4 @@ app.listen(process.env.PORT || 5000, function(req, res) {
   console.log("Server started on port 5000.");
 });
 
-// api key
-// 5f58bd3fabf74db1e009372b67a99b60-us4
 
-// id 8bdf902989
